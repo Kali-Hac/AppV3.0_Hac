@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open_project/CoolTodoCard-master/app/bwl_uiii.iml" filepath="$PROJECT_DIR$/open_project/CoolTodoCard-master/app/bwl_uiii.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open_project/CircleMenu-master/cmlibrary/cmlibrary.iml" filepath="$PROJECT_DIR$/open_project/CircleMenu-master/cmlibrary/cmlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open_project/DoubleScroll-master/app/doublescroll.iml" filepath="$PROJECT_DIR$/open_project/DoubleScroll-master/app/doublescroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/open_project/LovelyProgressBar-master/lovelyprogressbar/lovelyprogressbar.iml" filepath="$PROJECT_DIR$/open_project/LovelyProgressBar-master/lovelyprogressbar/lovelyprogressbar.iml" />
+    </modules>
+  </component>
+</project>

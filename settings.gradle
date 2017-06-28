@@ -1,0 +1,5 @@
+include ':app', ':bwl_uiii', ':lovelyprogressbar', ':cmlibrary', ':doublescroll'
+project(':bwl_uiii').projectDir = new File('open_project/CoolTodoCard-master/app')
+project(':lovelyprogressbar').projectDir = new File('open_project/LovelyProgressBar-master/lovelyprogressbar')
+project(':cmlibrary').projectDir = new File('open_project/CircleMenu-master/cmlibrary')
+project(':doublescroll').projectDir = new File('open_project/DoubleScroll-master/app')

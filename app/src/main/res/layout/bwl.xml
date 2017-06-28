@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ScrollViewxmlns="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清->清空所有文字\n删->删除\n闹钟->增加定时提醒\n划闹钟->取消提醒\n放大镜->查找" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户帮助" />
+            </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:orientation="horizontal" android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--<Button-->
+        <!--android:id="@+id/set_alarm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="设置提醒时间" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/cancel_alarm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="取消设置" />-->
+        <!--<Button-->
+            <!--android:id="@+id/add_item"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="继续添加" />-->
+<!--</LinearLayout>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重要性" />
+        <Spinner
+            android:id="@+id/importance"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事项类型" />
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒次数" />
+        <Spinner
+            android:id="@+id/rem_time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒时间" />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="请通过上面按钮设置"
+        android:inputType="textPersonName" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备忘录信息" />
+
+    <EditText
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加自定义时间的备忘录(不设置提醒)" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备忘录ID" />
+    <EditText
+        android:id="@+id/info_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/get_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询备忘事件" />
+        <Button
+            android:id="@+id/del_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除该事件" />
+        </LinearLayout>
+    <Button
+        android:id="@+id/display_bwl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示所有备忘事件" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:scrollbars="vertical" android:fadingEdge="vertical">
+    <TextView
+        android:id="@+id/bwl_db"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingTop="5dip"
+         />
+    </ScrollView>
+</LinearLayout>

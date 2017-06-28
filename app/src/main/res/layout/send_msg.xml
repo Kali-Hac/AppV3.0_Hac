@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号" />
+
+    <EditText
+        android:id="@+id/mem_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/set_or_not_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否设置为紧急联系人" />
+
+        <Spinner
+            android:id="@+id/set_or_not"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="号码" />
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方式" />
+
+        <Spinner
+            android:id="@+id/phone_type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找方式：" />
+
+        <Spinner
+            android:id="@+id/search_type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/search_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/get_mem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询所有" />
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/add_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加联系人" />
+    <Button
+        android:id="@+id/mod_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改联系人信息" />
+    <Button
+        android:id="@+id/del_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除联系人" />
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/send_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:inputType="textPersonName"
+         />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即发送短信" />
+
+    <Button
+        android:id="@+id/get_all_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看所有已添加联系人" />
+    <Button
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户帮助" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:scrollbars="vertical" android:fadingEdge="vertical">
+        <TextView
+            android:id="@+id/display_mem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:paddingTop="5dip"
+            />
+    </ScrollView>
+</LinearLayout>

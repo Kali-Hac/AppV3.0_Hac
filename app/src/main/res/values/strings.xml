@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kali_Hac V2.0</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="other">It\'s an other activity!</string>
+    <string name="jsd">It\'s an jsd activity!</string>
+    <string name="loc">It\'s an location activity!</string>
+    <string name="send">It\'s an send_message activity!</string>
+    <string name="bwl">It\'s an bwl activity!</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6699ff"
+>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+    <ImageView
+        android:src="@mipmap/icon_gps"
+        android:layout_width="@dimen/p10"
+        android:layout_height="@dimen/p10" />
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/p5"
+        android:fontFamily="Condensed bold"
+        />
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <Spinner
+        android:id="@+id/address_spinner"
+        android:textSize="@dimen/p8"
+        android:layout_width="80dp"
+        android:fontFamily="Condensed bold"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName" />
+        <Button
+            android:layout_marginLeft="@dimen/p4"
+            android:id="@+id/address_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="附加地址" />
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:src="@mipmap/icon_search"
+        android:layout_width="@dimen/p10"
+        android:layout_height="@dimen/p10" />
+        <TextView
+            android:id="@+id/mem_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/p8"
+            android:gravity="center"
+            android:clickable="true"
+            android:fontFamily="Condensed bold"/>
+</LinearLayout>
+        <TextView
+            android:id="@+id/sos_mem_num"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/p8"
+            android:gravity="center"
+            android:clickable="true"
+            android:fontFamily="Condensed bold"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/p10"
+            android:layout_height="@dimen/p10"
+            android:src="@mipmap/icon_notify" />
+
+        <TextView
+            android:id="@+id/bwl_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:fontFamily="Condensed bold"
+            android:gravity="center"
+            android:textSize="@dimen/p8" />
+        <Button
+            android:id="@+id/help"
+            android:layout_marginLeft="@dimen/p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="帮助" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <Switch
+        android:id="@+id/yaoyiyao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否开启'摇一摇'定位" />
+
+    <Switch
+        android:id="@+id/yanshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否延时发送短信" />
+
+
+</LinearLayout>
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
