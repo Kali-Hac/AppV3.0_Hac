@@ -26,7 +26,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':bwl_uiii')
     compile 'com.ljs:LovelyProgressBar:1.0.0'
     compile 'com.github.Hitomis:CircleMenu:v1.1.0'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
